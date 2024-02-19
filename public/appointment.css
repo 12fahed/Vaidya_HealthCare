@@ -1,0 +1,208 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: Montserrat, "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #FFF6E5;
+    background-image: url(img/Appointmentbackground.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  .form-container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 100vh;
+    padding: 20px;
+  }
+  
+  .formbold-form-wrapper {
+    width: clamp(320px, 30%, 420px);
+    margin: 0;
+    border: 2px solid #ccc;
+    border-radius: 0.35rem;
+    padding: 1.5rem;
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.3);
+  }
+  
+  
+
+  .formbold-mb-5 {
+    margin-bottom: 20px;
+
+  }
+  .formbold-pt-3 {
+    padding-top: 12px;
+  }
+
+
+  /* .formbold-main-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 48px;
+  }
+
+  .formbold-form-wrapper {
+    margin: 0 auto;
+    max-width: 550px;
+    width: 100%;
+    background: white;
+    
+  } */
+  .formbold-form-label {
+    display: block;
+    font-weight: 500;
+    font-size: 16px;
+    
+    margin-bottom: 12px;
+  }
+  .formbold-form-label-2 {
+    font-weight: 600;
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: #004D49;
+  }
+
+  .formbold-form-input {
+    width: 100%;
+    padding: 12px 24px;
+    border-radius: 6px;
+    border: 1px solid #e0e0e0;
+    background-color: #FFF6E5;
+    font-weight: 500;
+    font-size: 16px;
+    color: #6b7280;
+    outline: none;
+    resize: none;
+  }
+  .formbold-form-input:focus {
+    border-color: #004D49;
+    box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.05);
+  }
+
+  .formbold-btn {
+    text-align: center;
+    font-size: 16px;
+    border-radius: 6px;
+    padding: 14px 32px;
+    border: none;
+    font-weight: 600;
+    background-color: #004D49;
+    color: #FFF6E5;
+    width: 100%;
+    cursor: pointer;
+  }
+  .formbold-btn:hover {
+    box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.05);
+  }
+
+  .formbold--mx-3 {
+    margin-left: -12px;
+    margin-right: -12px;
+  }
+  .formbold-px-3 {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+  .flex {
+    display: flex;
+  }
+  .flex-wrap {
+    flex-wrap: wrap;
+  }
+  .w-full {
+    width: 100%;
+  }
+  @media (min-width: 540px) {
+    .sm\:w-half {
+      width: 50%;
+    }
+  }
+
+  .headingOfAppointment {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: #004D49;
+    font-family: 'Times New Roman', Times, serif;
+  }
+
+  .maps{
+    margin-right: 40px;
+    border-style: groove;
+    border-radius: 10px;
+    padding: 2px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+  }
+
+  /* iframe{
+    width: 1000px;
+  } */
+
+  .instruction{
+    margin-left: 35px;
+    color: #004D49;
+  }
+
+/* Add this to your existing CSS styles */
+
+.dropdown-container {
+  display: flex;
+  /* justify-content: space-around; Adjust spacing as needed */
+  margin-top: 20px;
+}
+
+.dropdown {
+  width: 150px;
+  padding: 10px;
+  margin-left: 35px;
+  border: 2px solid #004D49;
+  border-radius: 8px;
+  background-color: #FFF6E5;
+  font-size: 16px;
+  color: #6b7280;
+  outline: none;
+  transition: border-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.dropdown:hover {
+  border-color: #009688; /* Highlight border on hover */
+}
+
+/* Disable hover effect when the dropdown is disabled */
+.dropdown:disabled:hover {
+  border-color: #e0e0e0;
+}
+
+/* Style the dropdown arrow */
+.dropdown::after {
+  content: '\25BC'; /* Unicode character for down arrow */
+  font-size: 14px;
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #6b7280;
+}
+
+/* Style for disabled dropdown */
+.dropdown:disabled {
+  background-color: #f2f2f2;
+  color: #b0b0b0;
+  cursor: not-allowed;
+}
+
+.date{
+  margin-top: 20px;
+  margin-left: 35px;
+  width: 25%;
+}
+
+.map-instruc{
+  margin-top: 20px;
+}

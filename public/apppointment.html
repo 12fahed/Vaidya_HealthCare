@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <link rel="stylesheet" href="edu.css">
+  <link rel="stylesheet" href="appointment.css">
+  
+  <script src="appointment.js"></script>
+  <title>Appointment</title>
+  <script src="https://kit.fontawesome.com/2839c03294.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+
+  <header class="header">
+    <div class="logo">
+        <img src="img/Screenshot_2023-08-20_093535-removebg-preview.png" alt="" height="65">
+    </div>
+    
+
+    <nav class="navbar">
+      <a href="index.html" class="hover-underline"><b>Home</b></a>
+      <a href="about.html" class="hover-underline"><b>About</b></a>
+      <a href="diseases.html" class="hover-underline" target="_blank"><b>Diseases</b></a>
+      <a href="./medicines.html" class="hover-underline"><b>Medicine</b></a>
+      <a href="MentalHealth/index.html" class="hover-underline"><b>Mental Health</b></a>
+      <a href="Profile/doctors.html" class="hover-underline"><b>Doctors</b></a>
+      <a href="apppointment.html" class="hover-underline"><b>Appointment</b></a>
+      <a href="hospital.html" class="hover-underline"><b>Hospital</b></a>
+      <a href="#diagnosis" class="hover-underline"><b>Diagnosis</b></a>
+      <!-- <a href="./donate.html" class="hover-underline"><b>Donate</b></a> -->
+      <!-- <a href="contact.html" class="hover-underline"><b>Contact Us</b></a> -->
+      
+  </nav>
+
+    <div class="icons">
+        <div id="login-btn" class="fas fa-user">
+            <a href="login.html" style="color: #004D49; text-decoration: none; font-size: 23px">Sign up / Login</a>
+        </div>
+    </div>
+
+</header>
+
+<br><br><br><br><br><br><br><br>
+<div class="headingOfAppointment">
+  <h1 style="font-size: 40px; font-family: 'Times New Roman', Times, serif;">Book an Appointment</h1>  
+</div>
+
+<div class="instruction date formbold-form-label">
+  <h3>Select Date to consult</h3>
+</div>
+
+<div class="date formbold-mb-5 w-full">
+  <input type="date" name="date" id="date" class="formbold-form-input" />
+</div>
+
+<div class="instruction formbold-form-label">
+  <h3>Book Appointment Selecting Hospital</h3>
+</div>
+
+<div class="dropdown-container">
+  <select class="dropdown" id="cityDropdown" onchange="handleCityChange()">
+    <option value="" disabled selected>Select City</option>
+    <option value="city1">Mumbai</option>
+    <option value="city2">Delhi</option>
+    <option value="city3">Bangalore</option>
+    <option value="city4">Kolkata</option>
+    <option value="city5">Chennai</option>
+    <option value="city6">Hyderabad</option>
+    <option value="city7">Ahmedabad</option>
+    <option value="city8">Pune</option>
+    <option value="city9">Jaipur</option>
+    <option value="city10">Lucknow</option>
+    <!-- Add more city options as needed -->
+  </select>
+
+  <select class="dropdown" id="hospitalDropdown" onchange="handleHospitalChange()" disabled>
+    <option value="" disabled selected>Select Hospital</option>
+    <option value="Hospital 1">Hospital 1</option>
+    <!-- Add hospital options dynamically using JavaScript -->
+  </select>
+
+  <select class="dropdown" id="timingDropdown" onchange="handleTimingChange()" disabled>
+    <option value="" disabled selected>Select Timing</option>
+    <option value="City1">City 1</option>
+    <!-- Add timing options dynamically using JavaScript -->
+  </select>
+</div>
+
+<div class="instruction map-instruc formbold-form-label">
+  <h3>--- OR ---</h3>
+  <br>
+  <h3>Book Appointment by Selecting Hospital from Map</h3>
+</div>
+
+<div class="form-container">
+
+
+
+  <div class="maps">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7542.594169742799!2d72.82313234948971!3d19.05067136789619!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c938b7a970b1%3A0xe9fb628b3e9b2f95!2sLilavati%20Hospital%20And%20Research%20Centre!5e0!3m2!1sen!2sin!4v1705054972524!5m2!1sen!2sin" width="1000" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </div>
+
+
+  <div class="formbold-form-wrapper">
+
+          <form action="" method="get">
+
+            <div class="formbold-mb-5">
+              <label for="name" class="formbold-form-label formbold-form-label-2"> Full Name </label>
+              <input type="text" name="name" id="name" placeholder="Enter your full name" class="formbold-form-input"/>
+            </div>
+
+            <div class="formbold-mb-5">
+              <label for="phone" class="formbold-form-label formbold-form-label-2"> Phone Number </label>
+              <input type="text" name="phone" id="phone" placeholder="Enter your phone number" class="formbold-form-input"/>
+            </div>
+
+            <div class="formbold-mb-5">
+              <label for="email" class="formbold-form-label formbold-form-label-2"> Email Address </label>
+              <input type="email" name="email" id="email" placeholder="Enter your email" class="formbold-form-input"/>
+            </div>
+
+            <div class="formbold-mb-5 formbold-pt-3">
+
+              <label class="formbold-form-label formbold-form-label-2">Address Details</label>
+              <div class="flex flex-wrap formbold--mx-3">
+                <div class="w-full sm:w-half formbold-px-3">
+                  <div class="formbold-mb-5">
+                    <input type="text" name="area" id="area" placeholder="Enter area" class="formbold-form-input" />
+                  </div>
+                </div>
+
+                <div class="w-full sm:w-half formbold-px-3">
+                  <div class="formbold-mb-5">
+                    <input type="text" name="city" id="city" placeholder="Enter city" class="formbold-form-input" />
+                  </div>
+                </div>
+
+                <div class="w-full sm:w-half formbold-px-3">
+                  <div class="formbold-mb-5">
+                    <input type="text" name="state" id="state" placeholder="Enter state" class="formbold-form-input" />
+                  </div>
+                </div>
+
+                <div class="w-full sm:w-half formbold-px-3">
+                  <div class="formbold-mb-5">
+                    <input type="text" name="post-code" id="post-code" placeholder="Post Code" class="formbold-form-input" />
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+      
+            <div>
+
+            <button class="formbold-btn">Book Appointment</button>
+            </div>
+          </form>
+
+
+
+  </div>
+</div>
+
+<section class="footer">
+
+  <div class="box-container">
+
+
+      <div class="box">
+          <h3><strong>Find Us Here</strong></h3>
+          
+          <div style="border: 2px #004D49; border-style: dotted;">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3770.983347746455!2d72.83328527495452!3d19.064469752334894!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c91130392c07%3A0x3c47bf391c8de931!2sThadomal%20Shahani%20Engineering%20College!5e0!3m2!1sen!2sin!4v1697261022269!5m2!1sen!2sin" height="400" width="635" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+           
+          <p>Opp Thadomal Shahani Engineering College, Linking Road, Bandra (W), Mumbai-50</p>
+
+      </div>
+
+      <div style="padding: 20%; padding-top: 10%;">
+          <div class="box">
+
+              <div class="box">
+                  <h3><strong>contact us</strong></h3>
+                  <a href="tel:+91 98765 43210" target="_blank" class="link" style="text-decoration: none;">+91 98765 43210</a>
+                  <a href="mailto:heathcare@vaidya.in" target="_blank" class="link" style="text-decoration: none;">heathcare@vaidya.in</a>
+              </div>
+
+              <br><br><br><br><br><br>
+              <h3><strong>Social Media</strong></h3>
+              <div class="share">
+                  <a href="#" class="fab fa-facebook-f"></a>
+                  <a href="#" class="fab fa-twitter"></a>
+                  <a href="#" class="fab fa-instagram"></a>
+                  <a href="#" class="fab fa-linkedin"></a>
+              </div>
+
+          </div>
+      </div>
+  </div>
+
+  <br><br><br>
+  <div class="credit">created by <span><strong style="font-size: 50px; font-family: 'Times New Roman', Times, serif;"> Vaidya </strong></span>| All rights are reserved!</div>
+ 
+</section>
+
+</body>
+</html>

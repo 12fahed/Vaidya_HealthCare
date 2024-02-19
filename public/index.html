@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vaidya | A Medical Website</title>
+    <script src="https://kit.fontawesome.com/2839c03294.js" crossorigin="anonymous"></script>
+
+
+    <link rel="stylesheet" href="edu.css">
+    <link rel="" href="edu.js">
+    <script src="edu.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
+  
+    <link rel="stylesheet" href="edu.css">
+
+    <link rel="stylesheet" href="crsl.css">
+    <link rel="" href="edu.js">
+    <script src="edu.js"></script>
+    <script src="crsl.js"></script>
+
+
+</head>
+
+<body>
+    
+    <header class="header">
+        <div class="logo">
+            <img src="img/Screenshot_2023-08-20_093535-removebg-preview.png" alt="" height="65">
+        </div>
+        
+
+        <nav class="navbar">
+            <a href="index.html" class="hover-underline"><b>Home</b></a>
+            <a href="about.html" class="hover-underline"><b>About</b></a>
+            <a href="diseases.html" class="hover-underline" target="_blank"><b>Diseases</b></a>
+            <a href="./medicines.html" class="hover-underline"><b>Medicine</b></a>
+            <a href="MentalHealth/index.html" class="hover-underline"><b>Mental Health</b></a>
+            <a href="Profile/doctors.html" class="hover-underline"><b>Doctors</b></a>
+            <a href="apppointment.html" class="hover-underline"><b>Appointment</b></a>
+            <a href="hospital.html" class="hover-underline"><b>Hospital</b></a>
+            <a href="#diagnosis" class="hover-underline"><b>Diagnosis</b></a>
+            <!-- <a href="./donate.html" class="hover-underline"><b>Donate</b></a> -->
+            <!-- <a href="contact.html" class="hover-underline"><b>Contact Us</b></a> -->
+            
+        </nav>
+
+        <div class="icons">
+            <div id="login-btn" class="fas fa-user">
+                <a href="login.html" style="color: #004D49; text-decoration: none; font-size: 23px">Sign up / Login</a>
+            </div>
+        </div>
+
+    </header>
+      
+    <div class="help">
+        <a href="faq.html">
+            <img src="img/help2.png" height="60px" alt="">
+            <div class="overlay-text">Need help?</div>
+        </a>
+    </div>
+
+    <div id="heroSlider" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+
+            <div class="carousel-item text-center bg-cover vh-100 active slide-1">
+                <div class="container h-100 d-flex align-items-center justify-content-left">
+                    <div class="row justify-content-left">
+                        <div class="col-lg-8">
+                            <h6 class="text-white" style="font-size: 15px;">WELCOME</h6>
+                            <h1 style="color:#004D49; font-size: 80px;"><b style="font-family: 'Times New Roman', Times, serif;">VAIDYA</b></h1>
+                            <p class="text-white" style="font-size: 20px;">Innovating Healthcare for a Better World</p>
+                            <br>
+                            <p class="text-white" style="font-size: 17px">A Comprehensive Website to provide Healthcare Information. A Platform to know everrything Related to Health, Diseases, Doctors, Medicines many more.</p>
+                            <a href="about.html" class="btn">
+                                <span class="text text-1">Learn More</span>
+                                <span class="text text-2" aria-hidden="true">Learn more</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item text-center bg-cover vh-100 slide-2">
+                <div class="container h-100 d-flex align-items-center justify-content-left">
+                    <div class="row justify-content-left">
+                        <div class="col-lg-8">
+                            <h1 class="display-1 my-3 fw-bold text-white">About Diseases</h1>
+                            <p class="text-white" style="font-size: 17px;">Are you doubting about the symptons you have?</p>
+                            <a href="diseases.html" class="btn">
+                                <span class="text text-1">Learn More</span>
+                                <span class="text text-2" aria-hidden="true">Learn more</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item text-center bg-cover vh-100 slide-3">
+                <div class="container h-100 d-flex align-items-center justify-content-left">
+                    <div class="row justify-content-left">
+                        <div class="col-lg-8">
+                            <h1 class="display-1 my-3 fw-bold text-white">Search the Best Doctor</h1>
+                            <p class="text-white" style="font-size: 17px;">Multiple doctors of various specialities</p>
+                            <a href="#" class="btn">
+                                <span class="text text-1">Learn More</span>
+                                <span class="text text-2" aria-hidden="true">Learn more</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item text-center bg-cover vh-100 slide-4">
+                <div class="container h-100 d-flex align-items-center justify-content-left">
+                    <div class="row justify-content-left">
+                        <div class="col-lg-8">
+                            <h1 class="display-1 my-3 fw-bold text-white">Accurate Diagnosis Centers</h1>
+                            <p class="text-white" style="font-size: 17px;">Get yourself diagnosed with precision</p>
+                            <a href="#" class="btn">
+                                <span class="text text-1">Learn More</span>
+                                <span class="text text-2" aria-hidden="true">Learn more</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item text-center bg-cover vh-100 slide-5">
+                <div class="container h-100 d-flex align-items-center justify-content-left">
+                    <div class="row justify-content-left">
+                        <div class="col-lg-8">
+                            <h1 class="display-1 my-3 fw-bold text-white">Government Hospitals</h1>
+                            <p class="text-white" style="font-size: 17px;">Updates about the avalibility of beds and Doctors in Government Hospitals</p>
+                            <a href="#" class="btn">
+                                <span class="text text-1">Learn More</span>
+                                <span class="text text-2" aria-hidden="true">Learn more</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#heroSlider" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#heroSlider" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+
+    <section class="subjects">
+
+        <h1 class="heading">Our Popular Services</h1>
+
+        <div class="box-container">
+
+            <div class="box">
+                <a href="medicines.html">
+                    <img src="./img/medicine_do.png" alt="subjects">
+                </a>
+                
+                <h3>Search Medicine</h3>
+                <p>Check Medicine Details and Book. Check for the avalibility in nearest store</p>
+            </div>
+
+            <div class="box">
+                <a href="Profile/doctors.html">
+                    <img src="./img/doctor-do.png" alt="subjects">
+                </a>
+                
+                <h3>Search Doctors</h3>
+                <p>Search nearest and best Doctors. Doctors Information and past experiences.</p>
+            </div>
+
+            <div class="box">
+                    <a href="donate.html">
+                        <img src="./img/donate-do.png" alt="subjects">
+                    </a>
+
+                    <h3>Donation</h3>
+                    <p >Donate for a good cause. Doncate to save life and </p>
+            </div>
+
+            <div class="box">
+                <a href="apppointment.html">
+                    <img src="./img/appointment.png" alt="subjects">
+                </a>
+                
+                <h3>Book an Appointment</h3>
+                <p>Book your appointment in just one click, check the doctors avalibility and status.</p>
+            </div>
+
+        </div>
+
+        <div class="center-button">
+            <a href="contact.html" class="btn">
+                <span class="text text-1">Conatct Us</span>
+                <span class="text text-2" aria-hidden="true">Contact Us</span>
+            </a>
+        </div>
+
+    </section>
+
+<section class="review" id="review">
+    <h1 class="heading">What our Doctors say?</h1>
+    <div class="swiper review-slider">
+        <div class="swiper-wrapper">
+
+            <div class="swiper-slide slide">
+                <div class="user">
+                    <img src="./img/review-1.png" alt="">
+                    <div class="user-info">
+                        <h3>Dr. Mohit Jaiswal</h3>
+                        <h4>Cardiologist</h4>
+                    </div>
+                    <div>
+                        <p>Engage in at least 30 minutes of brisk walking or equivalent moderate-intensity aerobic exercise most days of the week to help maintain a healthy heart.</p>
+                    <div class="wrapper">
+                    <div class="separator"></div>
+                    <div class="separator"></div>
+                    <div class="separator"></div>
+                    <div class="separator"></div>
+                    <div class="separator"></div>
+                    </div> 
+                    </div>
+                </div>
+            </div>
+            
+
+            <div class="swiper-slide slide">
+                <div class="user">
+                    <img src="./img/review-2.png" alt="">
+                    <div class="user-info">
+                        <h3>Dr. Shrusti Desai</h3>
+                        <h4>Dermatologist</h4>
+                    </div>
+                    <div>
+                        <p>Use sunscreen daily and perform regular skin self-exams to protect against skin cancer. Avoid talking bath immediately after coming from sun.</p>
+                    <div class="wrapper">
+                    <div class="separator"></div>
+                    <div class="separator"></div>
+                    <div class="separator"></div>
+                    <div class="separator"></div>
+                    <div class="separator"></div>
+                    </div> 
+                    </div>
+                </div>
+            </div>
+
+            <div class="swiper-slide slide">
+                <div class="user">
+                    <img src="./img/review-3.png" alt="">
+                    <div class="user-info">
+                        <h3>Dr. Ankit Ranade</h3>
+                        <h4>Gastroenterologist</h4>
+                    </div>
+                    <div>
+                        <p>Eat fiber-rich foods and stay hydrated to promote digestive health, and immune system. Have a glass of water half an hour later you meal. Have light meal at night.</p>
+                    <div class="wrapper">
+                    <div class="separator"></div>
+                    <div class="separator"></div>
+                    <div class="separator"></div>
+                    <div class="separator"></div>
+                    <div class="separator"></div>
+                    </div> 
+                    </div>
+                </div>
+            </div>
+
+            <div class="center-button">
+                <a href="drsay.html" class="btn">
+                    <span class="text text-1">Know More</span>
+                    <span class="text text-2" aria-hidden="true">Know more</span>
+                </a>
+            </div>
+    
+
+        </div>
+
+    </div>
+
+    </section>
+
+   
+
+
+<section class="blog" id="blog">
+    <div class="section__container blog__container">
+
+        <h3 class="heading">Our Treatment Stories</h3>
+
+      <br>
+      <div class="blog__grid">
+
+        <div class="blog__card">
+          <img src="./img/patient1.jpg" alt="blog" />
+          
+          <div class="blog__details">
+            <br>
+            <h4>Ricky Sablet from America</h4>
+            <p>
+                Nagpur has gained popularity as a sought-after destination for spinal decompression surgery, drawing numerous international patients due to India's advanced medical infrastructure and cost-effective services. Indian <b style="font-family: 'Times New Roman', Times, serif; font-size: 20px;">Vaidya</b> Group, a leading medical facilitator, has successfully coordinated and overseen numerous medical procedures in India, offering top-notch expertise and resources. One such success story is Mr. Ricky Sablet, an American patient who recently underwent spinal decompression surgery in Nagpur. His experience in India is worth exploring for those considering similar medical treatments abroad.
+            </p>
+          <a href="https://www.indianhealthguru.com/american-patient-success-story-comprehensive-spinal-decompression-surgery-nagpur-india.html" target="_blank"><span> Read More</span></a>  
+          </div>
+        </div>
+        
+        <div class="blog__card">
+          <img src="./img/patient2.jpg" alt="blog" />
+          <div class="blog__details">
+            <br>
+            <h4>Austin from Nigeria</h4>
+            <p>
+                Medical tourists all across the world, come for best quality Uterus Tumor surgery in Hyderabad and Pune, for the fact that it comes with best medical amenities. We at Indian <b style="font-family: 'Times New Roman', Times, serif; font-size: 20px;">Vaidya</b> Group, provide various medical treatments and surgeries including Uterus Tumor surgery in Hyderabad and Pune with best possible medical resources. Unlike others, recently, Mrs. Austin from Nigeria had her Uterus Tumor surgery in Hyderabad-India. She shares her experience with us. Read on to know more about it.
+            </p>
+          
+          <a href="https://www.indianhealthguru.com/nigerian-patient-testimonial-uterus-tumor-surgery-hyderabad-india.html" target="_blank"><span> Read More</span></a> 
+        </div> 
+        </div>
+
+        <div class="blog__card">
+            <img src="./img/patient3.jpg" alt="blog" />
+            <div class="blog__details">
+              <br>
+              <h4>Jonathan</h4>
+              <p>
+                Jonathan, a native of the USA, shares his urology treatment experience in Chennai, India, facilitated by Indian <b style="font-family: 'Times New Roman', Times, serif; font-size: 20px;">Vaidya</b> Consultants. He learned about their cost-effective and high-quality healthcare services through a friend and was particularly impressed by Dr. Dheeraj Bojwani's unique profile. After a surgical consultation and a review of his medical reports, the experienced urology surgeons in Chennai were recommended. The cost estimates were reasonable, and Jonathan had direct communication with these skilled professionals.
+              </p>
+            
+            <a href="https://www.indianhealthguru.com/american-patient-testimonial-urology-surgery-chennai-india.html" target="_blank"><span> Read More</span></a> 
+          </div> 
+          </div>
+      </div>
+      <div class="center-button">
+        <a href="about.html" class="btn">
+            <span class="text text-1">Know More</span>
+            <span class="text text-2" aria-hidden="true">Know more</span>
+        </a>
+    </div>
+    </div>
+</section>
+
+    <div class="spacer"></div>
+
+    <section class="footer">
+
+        <div class="box-container">
+
+
+            <div class="box">
+                <h3><strong>Find Us Here</strong></h3>
+                
+                <div style="border: 2px #004D49; border-style: dotted;">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3770.983347746455!2d72.83328527495452!3d19.064469752334894!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c91130392c07%3A0x3c47bf391c8de931!2sThadomal%20Shahani%20Engineering%20College!5e0!3m2!1sen!2sin!4v1697261022269!5m2!1sen!2sin" height="400" width="650" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                  </div>
+                 
+                <p>Opp Thadomal Shahani Engineering College, Linking Road, Bandra (W), Mumbai-50</p>
+
+            </div>
+
+            <div style="padding: 20%; padding-top: 10%;">
+                <div class="box">
+
+                    <div class="box">
+                        <h3><strong>contact us</strong></h3>
+                        <a href="tel:+91 98765 43210" target="_blank" class="link" style="text-decoration: none;">+91 98765 43210</a>
+                        <a href="mailto:heathcare@vaidya.in" target="_blank" class="link" style="text-decoration: none;">heathcare@vaidya.in</a>
+                    </div>
+    
+                    <br><br><br><br><br><br>
+                    <h3><strong>Social Media</strong></h3>
+                    <div class="share">
+                        <a href="#" class="fab fa-facebook-f"></a>
+                        <a href="#" class="fab fa-twitter"></a>
+                        <a href="#" class="fab fa-instagram"></a>
+                        <a href="#" class="fab fa-linkedin"></a>
+                    </div>
+    
+                </div>
+            </div>
+        </div>
+
+        <br><br><br>
+        <div class="credit">created by <span><strong style="font-size: 50px; font-family: 'Times New Roman', Times, serif;"> Vaidya </strong></span>| All rights are reserved!</div>
+       
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+    crossorigin="anonymous"></script>
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="dark.js"></script>
+    
+</body>
+</html>
